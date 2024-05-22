@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="stylesheet" href="challenge.css">
+    <style type="text/css">
+    
+    button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #F93F0B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    } 
+    button:hover {
+    background-color: #45a049;
+    }
+
+    button:active {
+    font-size: 18px;
+    color: #333;
+    }
+    input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    }
+    input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    }
+    input:focus::placeholder {
+    color: #888;
+    }
+    input:focus {
+    color: #333;
+    }
+    a {
+    font-size: 16px;
+    color: #0000EE;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    }
+    a:hover {
+    color: #FF6347;
+    text-decoration: underline;
+    }
+    a:active {
+    font-weight: bold;
+    }
+    button {
+    transition: background-color 0.3s ease, font-size 0.3s ease, color 0.3s ease;
+    }
+    input::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+    }
+    a {
+    transition: color 0.3s ease, text-decoration 0.3s ease, font-weight 0.3s ease;
+    }
+    button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    }
+    input:focus {
+    background-color: #f0f0f0;
+    }
+   
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pseudo ni cy</h1>
+    </header>
+    <main>
+        <button>Click Me!</button>
+        <input type="text" placeholder="Enter your name">
+      <h1> <a href="#">Visit our website</a></h1>
+    </main>
+</body>
+</html>
